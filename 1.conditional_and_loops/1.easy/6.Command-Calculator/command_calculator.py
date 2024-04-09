@@ -21,11 +21,25 @@
 # 2
 import sys
 
-user_input = int(input("Enter a No from 1 to 6 in following order--\n1 for sum\n2 for difference\n3 for product\n4 for division\n5 for remainder\n6 for exiting\n"))
+n = int(input("Enter a No from 1 to 6 in following order--\n1 for sum\n2 for difference\n3 for product\n4 for division\n5 for remainder\n6 for exiting\n"))
 
-while user_input <= 0 and user_input >= 7:
-    user_input = int(input("Invalid Operation"))
+while n <= 0 and n >= 7:
+    n = int(input("Invalid Operation"))
 
-if user_input == 6:
+if n == 6:
     print("exiting the program")
     sys.exit(0)
+
+input1 = int(input("Enter 1st number- "))
+input2 = int(input("Enter 2nd number- "))
+
+if n == 1:
+    print(input1 + input2)
+elif n == 2:
+    print(input1 - input2)
+elif n == 3:
+    print(input1 * input2)
+elif n == 4:
+    print(input1 / input2)
+else:
+    print(input1 % input2)
