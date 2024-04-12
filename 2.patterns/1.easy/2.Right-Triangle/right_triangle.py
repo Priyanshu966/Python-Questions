@@ -21,4 +21,68 @@ while i <= n:
 
 print('\n')
 
+# Second Pattern
+
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= i:
+        print(i,end='')
+        j += 1
+
+    print('')
+    i += 1
+
+print('\n')
+
+# Third Pattern
+
+i = 1
+
+while i <= n:
+    j = i
+    while j > 0:
+        print(j,end='')
+        j -= 1
+
+    print('')
+    i += 1
+
+print('\n')
+
+
+# Fourth Pattern
+
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= i:
+        print(j,end='')
+        j += 1
+
+    print('')
+    i += 1
+
+print('\n')
+
+
+# Fifth Pattern
+
+i = 1
+count = 1
+
+while i <= n:
+    j = 1
+    while j <= i:
+        print(count,end='')
+        count += 1
+        j += 1
+
+    print('')
+    i += 1
+
+print('\n')
+
 
