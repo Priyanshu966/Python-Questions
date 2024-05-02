@@ -27,3 +27,31 @@
 # xy
 # Sample Output 2:
 # x
+
+
+def highest_occur(str):
+    if len(str) <= 1:
+        return str
+
+    frequency = [0] * 256
+
+    for i in str:
+        frequency[ord(i)] += 1
+
+    max = 0
+    max_char_ord = 0
+
+    for i in range(len(frequency)):
+        if frequency[i] > max:
+            max = frequency[i]
+            max_char_ord = i
+
+    return chr(max_char_ord)
+
+
+str = 'abdefgbabfba'
+
+ans = highest_occur(str)
+print(ans)
+
+
