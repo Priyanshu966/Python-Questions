@@ -9,6 +9,7 @@ def check_sorted_main(arr,i):
 
     return check_sorted_main(arr, i - 1)
 
+
 def check_sorted(arr):
     if len(arr) == 0 or len(arr) == 1:
         return True
